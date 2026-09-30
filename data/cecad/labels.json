@@ -1,0 +1,160 @@
+{
+  "generatedFrom": "core/catalogs/dictionaries",
+  "domains": {
+    "abastecimento_agua": {
+      "1": "Rede geral",
+      "2": "Poço ou nascente",
+      "3": "Cisterna",
+      "4": "Outra forma"
+    },
+    "agua_canalizada": {
+      "1": "Sim",
+      "2": "Não"
+    },
+    "alfabetizacao": {
+      "1": "Sabe ler e escrever",
+      "2": "Não sabe ler e escrever"
+    },
+    "banheiro_domicilio": {
+      "1": "Com banheiro",
+      "2": "Sem banheiro"
+    },
+    "carteira_assinada": {
+      "1": "Com carteira assinada",
+      "2": "Sem carteira assinada",
+      "3": "Não sabe"
+    },
+    "deficiencia": {
+      "1": "Com deficiência",
+      "2": "Sem deficiência"
+    },
+    "destino_lixo": {
+      "1": "É coletado diretamente",
+      "2": "É coletado indiretamente",
+      "3": "É queimado ou enterrado na propriedade",
+      "4": "É jogado em terreno baldio ou logradouro",
+      "5": "É jogado em rio ou mar",
+      "6": "Tem outro destino"
+    },
+    "escoamento_sanitario": {
+      "1": "Rede coletora de esgoto ou pluvial",
+      "2": "Fossa séptica",
+      "3": "Fossa rudimentar",
+      "4": "Vala a céu aberto",
+      "5": "Direto para um rio, lago ou mar",
+      "6": "Outra forma"
+    },
+    "especie_domicilio": {
+      "1": "Particular permanente",
+      "2": "Particular improvisado",
+      "3": "Coletivo"
+    },
+    "gpte": {
+      "101": "Família Cigana",
+      "201": "Família Extrativista",
+      "202": "Família de Pescadores Artesanais",
+      "203": "Família Pertencente a Comunidade de Terreiro",
+      "204": "Família Ribeirinha",
+      "205": "Família Agricultores Familiares",
+      "301": "Família Assentada da Reforma Agrária",
+      "302": "Família Beneficiária do Programa Nacional do Crédito Fundiário",
+      "303": "Família Acampada",
+      "304": "Família Atingida por Empreendimentos de Infraestrutura",
+      "305": "Família de Preso do Sistema Carcerário",
+      "306": "Família Catadores de Material Reciclável"
+    },
+    "grau_instrucao": {
+      "1": "Sem instrução",
+      "2": "Fundamental incompleto",
+      "3": "Fundamental completo",
+      "4": "Médio incompleto",
+      "5": "Médio completo",
+      "6": "Superior incompleto ou mais"
+    },
+    "iluminacao": {
+      "1": "Elétrica com medidor próprio",
+      "2": "Elétrica com medidor comunitário",
+      "3": "Elétrica sem medidor",
+      "4": "Óleo, querosene ou gás",
+      "5": "Vela",
+      "6": "Outra forma"
+    },
+    "material_paredes": {
+      "1": "Alvenaria/tijolo com revestimento",
+      "2": "Alvenaria/tijolo sem revestimento",
+      "3": "Madeira aparelhada",
+      "4": "Taipa revestida",
+      "5": "Taipa não revestida",
+      "6": "Madeira aproveitada",
+      "7": "Palha",
+      "8": "Outro Material"
+    },
+    "material_piso": {
+      "1": "Terra",
+      "2": "Cimento",
+      "3": "Madeira aproveitada",
+      "4": "Madeira aparelhada",
+      "5": "Cerâmica, lajota ou pedra",
+      "6": "Carpete",
+      "7": "Outro Material"
+    },
+    "ocupacao_principal": {
+      "1": "Trabalhador por conta própria (bico, autônomo)",
+      "2": "Trabalhador temporário em área rural",
+      "3": "Empregado sem carteira de trabalho assinada",
+      "4": "Empregado com carteira de trabalho assinada",
+      "5": "Trabalhador doméstico sem carteira de trabalho assinada",
+      "6": "Trabalhador doméstico com carteira de trabalho assinada",
+      "7": "Trabalhador não-remunerado",
+      "8": "Militar ou servidor público",
+      "9": "Empregador",
+      "10": "Estagiário",
+      "11": "Aprendiz"
+    },
+    "parentesco_rf": {
+      "1": "RF",
+      "3": "Filho(a)",
+      "4": "Enteado(a)"
+    },
+    "raca_cor": {
+      "1": "Branca",
+      "2": "Preta",
+      "3": "Amarela",
+      "4": "Parda",
+      "5": "Indigena"
+    },
+    "sexo": {
+      "1": "Masculino",
+      "2": "Feminino"
+    },
+    "tempo_rua": {
+      "1": "Até seis meses",
+      "2": "Entre seis meses e um ano",
+      "3": "Entre um e dois anos",
+      "4": "Entre dois e cinco anos",
+      "5": "Entre cinco e dez anos",
+      "6": "Mais de dez anos"
+    }
+  },
+  "variableDomains": {
+    "abastecimento_agua": "d.cod_abaste_agua_domic_fam",
+    "agua_canalizada": "d.cod_agua_canalizada_fam",
+    "alfabetizacao": "p.cod_sabe_ler_escrever_memb",
+    "banheiro_domicilio": "d.cod_banheiro_domic_fam",
+    "carteira_assinada": "p.cod_cart_assinada_memb",
+    "deficiencia": "p.cod_deficiencia_memb",
+    "destino_lixo": "d.cod_destino_lixo_domic_fam",
+    "escoamento_sanitario": "d.cod_escoa_sanitario_domic_fam",
+    "especie_domicilio": "d.cod_especie_domic_fam",
+    "gpte": "d.ind_parc_mds_fam",
+    "grau_instrucao": "p.grau_instrucao",
+    "iluminacao": "d.cod_iluminacao_domic_fam",
+    "material_paredes": "d.cod_material_domic_fam",
+    "material_piso": "d.cod_material_piso_fam",
+    "ocupacao_principal": "p.cod_principal_trab_memb",
+    "parentesco_rf": "p.cod_parentesco_rf_pessoa",
+    "raca_cor": "p.cod_raca_cor_pessoa",
+    "sexo": "p.cod_sexo_pessoa",
+    "tempo_rua": "p.cod_tempo_rua_memb"
+  }
+}

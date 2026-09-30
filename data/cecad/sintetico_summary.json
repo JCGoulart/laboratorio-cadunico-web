@@ -1,0 +1,104 @@
+{
+  "gerador": "gerador próprio de dados sintéticos (modo CNEFE)",
+  "seed": 42,
+  "nFamiliasPorMunicipio": 61000,
+  "efeitoPercentual": 25.0,
+  "linhas": 495561,
+  "colunas": 212,
+  "particionado": true,
+  "arquivos": [
+    "cecad_sintetico_3304557.parquet",
+    "cecad_sintetico_3303302.parquet",
+    "cecad_sintetico_3146107.parquet",
+    "cecad_sintetico_3140001.parquet"
+  ],
+  "idsFamilia": {
+    "base": 90000000000,
+    "blocoPorMunicipio": 100000000
+  },
+  "variaveisComEfeito": [
+    "d.fx_rfpc",
+    "d.marc_pbf",
+    "d.cod_escoa_sanitario_domic_fam",
+    "d.cod_abaste_agua_domic_fam",
+    "d.cod_agua_canalizada_fam",
+    "d.cod_destino_lixo_domic_fam",
+    "p.cod_raca_cor_pessoa",
+    "p.grau_instrucao"
+  ],
+  "municipios": [
+    {
+      "ibge": 3304557,
+      "municipio": "Rio de Janeiro",
+      "conjunto": "rj",
+      "linhas": 124221,
+      "fator": 0.8787,
+      "idFamiliaBase": 90000000000,
+      "movimentos": {
+        "d.fx_rfpc": 3202,
+        "d.marc_pbf": 3072,
+        "d.cod_escoa_sanitario_domic_fam": 139,
+        "d.cod_abaste_agua_domic_fam": 108,
+        "d.cod_agua_canalizada_fam": 169,
+        "d.cod_destino_lixo_domic_fam": 77,
+        "p.cod_raca_cor_pessoa": 7830,
+        "p.grau_instrucao": 2625
+      }
+    },
+    {
+      "ibge": 3303302,
+      "municipio": "Niterói",
+      "conjunto": "rj",
+      "linhas": 123628,
+      "fator": 0.9902,
+      "idFamiliaBase": 90100000000,
+      "movimentos": {
+        "d.fx_rfpc": 260,
+        "d.marc_pbf": 248,
+        "d.cod_escoa_sanitario_domic_fam": 11,
+        "d.cod_abaste_agua_domic_fam": 9,
+        "d.cod_agua_canalizada_fam": 13,
+        "d.cod_destino_lixo_domic_fam": 6,
+        "p.cod_raca_cor_pessoa": 628,
+        "p.grau_instrucao": 212
+      }
+    },
+    {
+      "ibge": 3146107,
+      "municipio": "Ouro Preto",
+      "conjunto": "mg",
+      "linhas": 124190,
+      "fator": 1.0819,
+      "idFamiliaBase": 90200000000,
+      "movimentos": {
+        "d.fx_rfpc": 384,
+        "d.marc_pbf": 2924,
+        "d.cod_escoa_sanitario_domic_fam": 3826,
+        "d.cod_abaste_agua_domic_fam": 3854,
+        "d.cod_agua_canalizada_fam": 4624,
+        "d.cod_destino_lixo_domic_fam": 3785,
+        "p.cod_raca_cor_pessoa": 3284,
+        "p.grau_instrucao": 3141
+      }
+    },
+    {
+      "ibge": 3140001,
+      "municipio": "Mariana",
+      "conjunto": "mg",
+      "linhas": 123522,
+      "fator": 1.2362,
+      "idFamiliaBase": 90300000000,
+      "movimentos": {
+        "d.fx_rfpc": 1097,
+        "d.marc_pbf": 8434,
+        "d.cod_escoa_sanitario_domic_fam": 11029,
+        "d.cod_abaste_agua_domic_fam": 11080,
+        "d.cod_agua_canalizada_fam": 13320,
+        "d.cod_destino_lixo_domic_fam": 10950,
+        "p.cod_raca_cor_pessoa": 9487,
+        "p.grau_instrucao": 8968
+      }
+    }
+  ],
+  "aviso": "Dados SINTÉTICOS. O gerador compartilha a base distribucional do CadÚnico do RJ entre as quatro cidades; a diferença entre elas é o efeito municipal aleatório plantado aqui — e está declarada neste gabarito."
+}

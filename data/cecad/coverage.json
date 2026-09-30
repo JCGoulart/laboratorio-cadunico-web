@@ -1,0 +1,31 @@
+{
+  "colunasSchema": 211,
+  "entradasXlsx": 211,
+  "colunasParquet": 211,
+  "comRotulosCurados": 19,
+  "comRotulosOverride": 1,
+  "comRotulosXlsx": 97,
+  "semRotulos": 94,
+  "pii": 28,
+  "blocos": {
+    "risco": 2,
+    "situacao_rua": 36,
+    "renda": 17,
+    "raca_povos": 11,
+    "escolaridade": 14,
+    "habitabilidade": 19,
+    "deficiencia": 15,
+    "trabalho": 17,
+    "programas": 13,
+    "assistencia": 4,
+    "documentos": 36,
+    "identificacao": 15,
+    "territorio": 12
+  },
+  "avisos": {
+    "soSchema": [],
+    "soParquet": [],
+    "soXlsx": [],
+    "extraXlsx": []
+  }
+}

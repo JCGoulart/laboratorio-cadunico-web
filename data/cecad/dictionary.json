@@ -1,0 +1,5534 @@
+[
+  {
+    "name": "d.cd_ibge",
+    "label": "codigo do ibge do municipio",
+    "descricao": "codigo do ibge do municipio",
+    "nivel": "familia",
+    "categoria": "ibge",
+    "dtype": "Int32",
+    "faixa": [
+      0,
+      99999999
+    ],
+    "bloco": "territorio",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.cod_abaste_agua_domic_fam",
+    "label": "Forma de abastecimento de agua",
+    "descricao": "Forma de abastecimento de agua",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      4
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Rede geral"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Poço ou nascente"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Cisterna"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Outra forma"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/abastecimento_agua.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_agua_canalizada_fam",
+    "label": "Agua canalizada no domicilio",
+    "descricao": "Agua canalizada no domicilio",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Não"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/agua_canalizada.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_banheiro_domic_fam",
+    "label": "Existencia de banheiro",
+    "descricao": "Existencia de banheiro",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Com banheiro"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Sem banheiro"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/banheiro_domicilio.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_calcamento_domic_fam",
+    "label": "Calcamento em frente ao seu domicilio",
+    "descricao": "Calcamento em frente ao seu domicilio",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      3
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Total"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Parcial"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Nao existe"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_centro_assist_fam",
+    "label": "Codigo do CRAS/CREAS",
+    "descricao": "Codigo do CRAS/CREAS",
+    "nivel": "familia",
+    "categoria": "codigo_longo",
+    "dtype": "Int32",
+    "faixa": null,
+    "bloco": "assistencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.cod_comunidade_quilombola_fam",
+    "label": "Codigo da comunidade quilombola",
+    "descricao": "Codigo da comunidade quilombola",
+    "nivel": "familia",
+    "categoria": "codigo_longo",
+    "dtype": "Int16",
+    "faixa": null,
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.cod_cta_energ_unid_consum_fam",
+    "label": "Codigo da unidade consumidora associado a conta de energia eletrica do domici...",
+    "descricao": "Codigo da unidade consumidora associado a conta de energia eletrica do domicilio.",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.cod_destino_lixo_domic_fam",
+    "label": "Forma de coleta do lixo",
+    "descricao": "Forma de coleta do lixo",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      6
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "É coletado diretamente"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "É coletado indiretamente"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "É queimado ou enterrado na propriedade"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "É jogado em terreno baldio ou logradouro"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "É jogado em rio ou mar"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Tem outro destino"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/destino_lixo.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_eas_fam",
+    "label": "Codigo do estabelecimento EAS/MS",
+    "descricao": "Codigo do estabelecimento EAS/MS",
+    "nivel": "familia",
+    "categoria": "codigo_longo",
+    "dtype": "Int32",
+    "faixa": null,
+    "bloco": "assistencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.cod_escoa_sanitario_domic_fam",
+    "label": "Forma de escoamento sanitario",
+    "descricao": "Forma de escoamento sanitario",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      6
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Rede coletora de esgoto ou pluvial"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Fossa séptica"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Fossa rudimentar"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Vala a céu aberto"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Direto para um rio, lago ou mar"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Outra forma"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/escoamento_sanitario.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_especie_domic_fam",
+    "label": "Especie do domicilio",
+    "descricao": "Especie do domicilio",
+    "nivel": "familia",
+    "categoria": "especie_domicilio",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      3
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Particular permanente"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Particular improvisado"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Coletivo"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/especie_domicilio.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_est_cadastral_fam",
+    "label": "Estado cadastral da familia",
+    "descricao": "Estado cadastral da familia",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      2,
+      3
+    ],
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "2",
+        "rotulo": "Sem Registro Civil"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Cadastrado"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_familia_indigena_fam",
+    "label": "Familia Indigena",
+    "descricao": "Familia Indigena",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_familiar_fam",
+    "label": "Codigo familiar",
+    "descricao": "Codigo familiar",
+    "nivel": "familia",
+    "categoria": "id_familia",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.cod_forma_coleta_fam",
+    "label": "Forma de coleta",
+    "descricao": "Forma de coleta",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      2
+    ],
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Informacao migrada como inexistente"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sem visita Domiciliar"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Com visita domiciliar"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_iluminacao_domic_fam",
+    "label": "Tipo de iluminacao",
+    "descricao": "Tipo de iluminacao",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      6
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Elétrica com medidor próprio"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Elétrica com medidor comunitário"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Elétrica sem medidor"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Óleo, querosene ou gás"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Vela"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Outra forma"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/iluminacao.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_indigena_reside_fam",
+    "label": "Reside em reserva indigena",
+    "descricao": "Reside em reserva indigena",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_local_domic_fam",
+    "label": "Situacao do domicilio",
+    "descricao": "Situacao do domicilio",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Urbanas"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Rurais"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_material_domic_fam",
+    "label": "Material predominante nas paredes externas do domicilio",
+    "descricao": "Material predominante nas paredes externas do domicilio",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      8
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Alvenaria/tijolo com revestimento"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Alvenaria/tijolo sem revestimento"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Madeira aparelhada"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Taipa revestida"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Taipa não revestida"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Madeira aproveitada"
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Palha"
+      },
+      {
+        "codigo": "8",
+        "rotulo": "Outro Material"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/material_paredes.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_material_piso_fam",
+    "label": "Material predominante no piso do domicilio",
+    "descricao": "Material predominante no piso do domicilio",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      7
+    ],
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Terra"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Cimento"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Madeira aproveitada"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Madeira aparelhada"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Cerâmica, lajota ou pedra"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Carpete"
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Outro Material"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/material_piso.json",
+    "observacao": null
+  },
+  {
+    "name": "d.cod_povo_indigena_fam",
+    "label": "Codigo de povo indigena",
+    "descricao": "Codigo de povo indigena",
+    "nivel": "familia",
+    "categoria": "codigo_longo",
+    "dtype": "Int16",
+    "faixa": null,
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.cod_reserva_indigena_fam",
+    "label": "Codigo da reserva indigena",
+    "descricao": "Codigo da reserva indigena",
+    "nivel": "familia",
+    "categoria": "codigo_longo",
+    "dtype": "Int16",
+    "faixa": null,
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.cod_unidade_territorial_fam",
+    "label": "Codigo da unidade territorial local",
+    "descricao": "Codigo da unidade territorial local",
+    "nivel": "familia",
+    "categoria": "ibge",
+    "dtype": "Int32",
+    "faixa": [
+      0,
+      99999999
+    ],
+    "bloco": "territorio",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.dat_atual_fam",
+    "label": "Data da ultima atualizacao da familia",
+    "descricao": "Data da ultima atualizacao da familia",
+    "nivel": "familia",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.dat_cadastramento_fam",
+    "label": "Data de cadastramento da familia",
+    "descricao": "Data de cadastramento da familia",
+    "nivel": "familia",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.des_complemento_adic_fam",
+    "label": "Complemento adicional",
+    "descricao": "Complemento adicional",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.des_complemento_fam",
+    "label": "Complemento do numero",
+    "descricao": "Complemento do numero",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.dta_entrevista_fam",
+    "label": "Data da entrevista",
+    "descricao": "Data da entrevista",
+    "nivel": "familia",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.fx_rfpc",
+    "label": "Faixa da renda familiar per capita",
+    "descricao": "Faixa da renda familiar per capita",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      4
+    ],
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Extrema pobreza: ate R$105,00"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pobreza: R$105,00 a R$218,00"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Baixa renda: R$218,01 ate 1/2 S.M."
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Acima de 1/2 S.M."
+      }
+    ],
+    "fonteValores": "overrides locais (pipelines/_common.py)",
+    "observacao": null
+  },
+  {
+    "name": "d.ic_envo_sms_contato_1_fam",
+    "label": "Autoriza envio de mensagem para telefone primario",
+    "descricao": "Autoriza envio de mensagem para telefone primario",
+    "nivel": "familia",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "S",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "N",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.ic_envo_sms_contato_2_fam",
+    "label": "Autoriza envio de mensagem para telefone secundario",
+    "descricao": "Autoriza envio de mensagem para telefone secundario",
+    "nivel": "familia",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "S",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "N",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.ic_tipo_contato_1_fam",
+    "label": "Tipo do telefone primario",
+    "descricao": "Tipo do telefone primario",
+    "nivel": "familia",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "L",
+        "rotulo": "Celular"
+      },
+      {
+        "codigo": "C",
+        "rotulo": "Trabalho"
+      },
+      {
+        "codigo": "R",
+        "rotulo": "Residencial"
+      },
+      {
+        "codigo": "O",
+        "rotulo": "Recado"
+      },
+      {
+        "codigo": "N",
+        "rotulo": "Nao tem"
+      },
+      {
+        "codigo": "D",
+        "rotulo": "Nao declarado"
+      },
+      {
+        "codigo": "S",
+        "rotulo": "Sem coleta de dados."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.ic_tipo_contato_2_fam",
+    "label": "Tipo do telefone secundario",
+    "descricao": "Tipo do telefone secundario",
+    "nivel": "familia",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "L",
+        "rotulo": "Celular"
+      },
+      {
+        "codigo": "C",
+        "rotulo": "Trabalho"
+      },
+      {
+        "codigo": "R",
+        "rotulo": "Residencial"
+      },
+      {
+        "codigo": "O",
+        "rotulo": "Recado"
+      },
+      {
+        "codigo": "N",
+        "rotulo": "Nao tem"
+      },
+      {
+        "codigo": "D",
+        "rotulo": "Nao declarado"
+      },
+      {
+        "codigo": "S",
+        "rotulo": "Sem coleta de dados."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.ind_familia_quilombola_fam",
+    "label": "Familia quilombola",
+    "descricao": "Familia quilombola",
+    "nivel": "familia",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.ind_parc_mds_fam",
+    "label": "Grupos Populacionais Tradicionais e Especificos",
+    "descricao": "Grupos Populacionais Tradicionais e Especificos",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int16",
+    "faixa": [
+      0,
+      306
+    ],
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "101",
+        "rotulo": "Família Cigana"
+      },
+      {
+        "codigo": "201",
+        "rotulo": "Família Extrativista"
+      },
+      {
+        "codigo": "202",
+        "rotulo": "Família de Pescadores Artesanais"
+      },
+      {
+        "codigo": "203",
+        "rotulo": "Família Pertencente a Comunidade de Terreiro"
+      },
+      {
+        "codigo": "204",
+        "rotulo": "Família Ribeirinha"
+      },
+      {
+        "codigo": "205",
+        "rotulo": "Família Agricultores Familiares"
+      },
+      {
+        "codigo": "301",
+        "rotulo": "Família Assentada da Reforma Agrária"
+      },
+      {
+        "codigo": "302",
+        "rotulo": "Família Beneficiária do Programa Nacional do Crédito Fundiário"
+      },
+      {
+        "codigo": "303",
+        "rotulo": "Família Acampada"
+      },
+      {
+        "codigo": "304",
+        "rotulo": "Família Atingida por Empreendimentos de Infraestrutura"
+      },
+      {
+        "codigo": "305",
+        "rotulo": "Família de Preso do Sistema Carcerário"
+      },
+      {
+        "codigo": "306",
+        "rotulo": "Família Catadores de Material Reciclável"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/gpte.json",
+    "observacao": null
+  },
+  {
+    "name": "d.ind_risco_scl_inseg_alim",
+    "label": "Risco social: inseguranca alimentar",
+    "descricao": "Família em risco para insegurança alimentar",
+    "nivel": "familia",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "risco",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.ind_risco_scl_vlco_drts",
+    "label": "Risco social: violacao de direitos",
+    "descricao": "Família identificada em situação de risco social associado à violação de direitos",
+    "nivel": "familia",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "risco",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.marc_pbf",
+    "label": "Familia beneficiaria do Programa Bolsa Familia",
+    "descricao": "Familia beneficiaria do Programa Bolsa Familia",
+    "nivel": "familia",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.nom_centro_assist_fam",
+    "label": "Nome do CRAS/CREAS",
+    "descricao": "Nome do CRAS/CREAS",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "assistencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_comunidade_quilombola_fam",
+    "label": "Nome da comunidade quilombola",
+    "descricao": "Nome da comunidade quilombola",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_entrevistador_fam",
+    "label": "Nome do entrevistador",
+    "descricao": "Nome do entrevistador",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_estab_assist_saude_fam",
+    "label": "Nome do estabelecimento EAS/MS",
+    "descricao": "Nome do estabelecimento EAS/MS",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "assistencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_localidade_fam",
+    "label": "Nome da localidade",
+    "descricao": "Nome da localidade",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_logradouro_fam",
+    "label": "Nome do logradouro",
+    "descricao": "Nome do logradouro",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_povo_indigena_fam",
+    "label": "Nome do povo indigena",
+    "descricao": "Nome do povo indigena",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_reserva_indigena_fam",
+    "label": "Nome da reserva indigena",
+    "descricao": "Nome da reserva indigena",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_tip_logradouro_fam",
+    "label": "Tipo de logradouro",
+    "descricao": "Tipo de logradouro",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_titulo_logradouro_fam",
+    "label": "Titulo do logradouro",
+    "descricao": "Titulo do logradouro",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.nom_unidade_territorial_fam",
+    "label": "Nome da unidade territorial local",
+    "descricao": "Nome da unidade territorial local",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.num_cep_logradouro_fam",
+    "label": "Num Cep Logradouro Fam",
+    "descricao": "CEP",
+    "nivel": "familia",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.num_cpf_entrevistador_fam",
+    "label": "CPF do entrevistador",
+    "descricao": "CPF do entrevistador",
+    "nivel": "familia",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.num_ddd_contato_1_fam",
+    "label": "DDD do telefone primario",
+    "descricao": "DDD do telefone primario",
+    "nivel": "familia",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.num_ddd_contato_2_fam",
+    "label": "DDD do telefone secundario",
+    "descricao": "DDD do telefone secundario",
+    "nivel": "familia",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.num_logradouro_fam",
+    "label": "Numero do logradouro",
+    "descricao": "Numero do logradouro",
+    "nivel": "familia",
+    "categoria": "contador",
+    "dtype": "Int16",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.num_tel_contato_1_fam",
+    "label": "Numero do telefone primario",
+    "descricao": "Numero do telefone primario",
+    "nivel": "familia",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.num_tel_contato_2_fam",
+    "label": "Numero do telefone secundario",
+    "descricao": "Numero do telefone secundario",
+    "nivel": "familia",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.qtd_comodos_domic_fam",
+    "label": "Quantidade de comodos do domicilio",
+    "descricao": "Quantidade de comodos do domicilio",
+    "nivel": "familia",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.qtd_comodos_dormitorio_fam",
+    "label": "Comodo servindo como dormitorio do domicilio",
+    "descricao": "Comodo servindo como dormitorio do domicilio",
+    "nivel": "familia",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.qtd_familias_domic_fam",
+    "label": "Quantidade de familias no domicilio",
+    "descricao": "Quantidade de familias no domicilio",
+    "nivel": "familia",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.qtd_pessoa_inter_0_17_anos_fam",
+    "label": "Quantidade de pessoas internadas faixa 0-17 anos",
+    "descricao": "Quantidade de pessoas internadas faixa 0-17 anos",
+    "nivel": "familia",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.qtd_pessoa_inter_18_64_anos_fam",
+    "label": "Quantidade de pessoas internadas faixa 18-59 anos",
+    "descricao": "Quantidade de pessoas internadas faixa 18-59 anos",
+    "nivel": "familia",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.qtd_pessoa_inter_65_anos_fam",
+    "label": "Quantidade de pessoas internadas faixa 60 anos ou mais",
+    "descricao": "Quantidade de pessoas internadas faixa 60 anos ou mais",
+    "nivel": "familia",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.qtd_pessoas_domic_fam",
+    "label": "Quantidade de pessoas no domicilio",
+    "descricao": "Quantidade de pessoas no domicilio",
+    "nivel": "familia",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "habitabilidade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.qtde_meses_desat_cat",
+    "label": "Numero de meses apos a ultima atualizacao cadastral",
+    "descricao": "Numero de meses apos a ultima atualizacao cadastral",
+    "nivel": "familia",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      5
+    ],
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "ate 12 Meses"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "13 a 18 Meses"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "19 a 24 Meses"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "25 a 36 Meses"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "37 a 48 Meses"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "acima de 48 Meses"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "d.ref_cad",
+    "label": "Referencia Cadastro Unico",
+    "descricao": "Referencia Cadastro Unico",
+    "nivel": "familia",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.ref_pbf",
+    "label": "Data de referencia Programa Bolsa Familia",
+    "descricao": "Data de referencia Programa Bolsa Familia",
+    "nivel": "familia",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.txt_referencia_local_fam",
+    "label": "Referencia para localizacao do endereco",
+    "descricao": "Referencia para localizacao do endereco",
+    "nivel": "familia",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "territorio",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.val_desp_agua_esgoto_fam",
+    "label": "Valor de despesas com agua",
+    "descricao": "Valor de despesas com agua",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.val_desp_alimentacao_fam",
+    "label": "Valor de despesas com alimentacao",
+    "descricao": "Valor de despesas com alimentacao",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.val_desp_aluguel_fam",
+    "label": "Valor de despesas com aluguel",
+    "descricao": "Valor de despesas com aluguel",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.val_desp_energia_fam",
+    "label": "Valor de despesas com energia",
+    "descricao": "Valor de despesas com energia",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.val_desp_gas_fam",
+    "label": "Valor de despesas com gas",
+    "descricao": "Valor de despesas com gas",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.val_desp_medicamentos_fam",
+    "label": "Valor de despesas com medicamentos",
+    "descricao": "Valor de despesas com medicamentos",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.val_desp_transpor_fam",
+    "label": "Valor de despesas com transporte",
+    "descricao": "Valor de despesas com transporte",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.vlr_renda_media_fam",
+    "label": "Valor da renda familiar per capita",
+    "descricao": "Valor da renda familiar per capita",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "d.vlr_renda_total_fam",
+    "label": "Valor da renda total da familia",
+    "descricao": "Valor da renda total da familia",
+    "nivel": "familia",
+    "categoria": "valor_monetario",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_afastado_trab_memb",
+    "label": "Pessoa estava afastada na semana passada?",
+    "descricao": "Pessoa estava afastada na semana passada?",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_agricultura_trab_memb",
+    "label": "Atividade extrativista",
+    "descricao": "Atividade extrativista",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_ano_serie_frequenta_memb",
+    "label": "Ano e serie do curso que a pessoa frequenta",
+    "descricao": "Ano e serie do curso que a pessoa frequenta",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      10
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Primeiro(a)"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Segundo(a)"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Terceiro(a)"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Quarto(a)"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Quinto(a)"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Sexto(a)"
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Setimo(a)"
+      },
+      {
+        "codigo": "8",
+        "rotulo": "Oitavo(a)"
+      },
+      {
+        "codigo": "9",
+        "rotulo": "Nono(a)"
+      },
+      {
+        "codigo": "10",
+        "rotulo": "Curso nao-seriado"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_ano_serie_frequentou_memb",
+    "label": "Ultimo ano e serie do curso que a pessoa frequentou",
+    "descricao": "Ultimo ano e serie do curso que a pessoa frequentou",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      10
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Primeiro(a)"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Segundo(a)"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Terceiro(a)"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Quarto(a)"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Quinto(a)"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Sexto(a)"
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Setimo(a)"
+      },
+      {
+        "codigo": "8",
+        "rotulo": "Oitavo(a)"
+      },
+      {
+        "codigo": "9",
+        "rotulo": "Nono(a)"
+      },
+      {
+        "codigo": "10",
+        "rotulo": "Curso nao-seriado"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_cart_assinada_memb",
+    "label": "Teve emprego com carteira assinada?",
+    "descricao": "Teve emprego com carteira assinada?",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      3
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Com carteira assinada"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Sem carteira assinada"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Não sabe"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/carteira_assinada.json",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_cartorio_certid_pessoa",
+    "label": "Codigo do cartorio do registro",
+    "descricao": "Codigo do cartorio do registro",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_censo_inep_memb",
+    "label": "Codigo INEP da escola da pessoa",
+    "descricao": "Codigo INEP da escola da pessoa",
+    "nivel": "pessoa",
+    "categoria": "codigo_longo",
+    "dtype": "Int32",
+    "faixa": null,
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_certidao_civil_pessoa",
+    "label": "Tipo de certidao",
+    "descricao": "Tipo de certidao",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      3
+    ],
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Nascimento"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Casamento"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "RANI"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_certidao_registrada_pessoa",
+    "label": "Nascimento registrado em Cartorio",
+    "descricao": "Nascimento registrado em Cartorio",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      4
+    ],
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim e tem Certidao de Nascimento"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Sim, mas nao tem Certidao de Nascimento"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Nao sabe"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_complemento_pessoa",
+    "label": "Complemento do numero do RG",
+    "descricao": "Complemento do numero do RG",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_concluiu_frequentou_memb",
+    "label": "A pessoa concluiu o curso?",
+    "descricao": "A pessoa concluiu o curso?",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_contato_parente_memb",
+    "label": "Tem contato com parente fora da condicao de rua",
+    "descricao": "Tem contato com parente fora da condicao de rua",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      6
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Todo dia"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Toda semana"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Todo mes"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Todo ano"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Quase nunca"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Nunca"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_curso_frequenta_memb",
+    "label": "Curso que a pessoa frequenta",
+    "descricao": "Curso que a pessoa frequenta",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      14
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Creche"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pre-escola (exceto CA)"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Classe de Alfabetizacao - CA"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Ensino Fundamental regular (duracao 8 anos)"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Ensino Fundamental regular (duracao 9 anos)"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Ensino Fundamental especial"
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Ensino Medio regular"
+      },
+      {
+        "codigo": "8",
+        "rotulo": "Ensino Medio especial"
+      },
+      {
+        "codigo": "9",
+        "rotulo": "Ensino Fundamental EJA - series iniciais (Supletivo - 1Âª a 4Âª)"
+      },
+      {
+        "codigo": "10",
+        "rotulo": "Ensino Fundamental EJA - series finais (Supletivo - 5Âª a 8Âª)"
+      },
+      {
+        "codigo": "11",
+        "rotulo": "Ensino Medio EJA (Supletivo)"
+      },
+      {
+        "codigo": "12",
+        "rotulo": "Alfabetizacao para adultos(Mobral, etc.)"
+      },
+      {
+        "codigo": "13",
+        "rotulo": "Superior, Aperfeicoamento,Especializacao, Mestrado,Doutorado"
+      },
+      {
+        "codigo": "14",
+        "rotulo": "Pre-vestibular"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_curso_frequentou_pessoa_memb",
+    "label": "Curso mais elevado que a pessoa frequentou",
+    "descricao": "Curso mais elevado que a pessoa frequentou",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      15
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Creche"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pre-escola (exceto CA)"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Classe de Alfabetizacao - CA"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Ensino Fundamental 1Âª a 4Âª series, Elementar (Primario), Primeira fase do 1Âº grau"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Ensino Fundamental 5Âª a 8Âª series, Medio 1Âº ciclo (Ginasial), Segunda fase do 1Âº grau"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Ensino Fundamental (duracao 9 anos)"
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Ensino Fundamental Especial"
+      },
+      {
+        "codigo": "8",
+        "rotulo": "Ensino Medio, 2Âº grau, Medio 2Âº ciclo (Cientifico, Classico, Tecnico, Normal)"
+      },
+      {
+        "codigo": "9",
+        "rotulo": "Ensino Medio Especial"
+      },
+      {
+        "codigo": "10",
+        "rotulo": "Ensino Fundamental EJA -series iniciais (Supletivo 1Âª a 4Âª)"
+      },
+      {
+        "codigo": "11",
+        "rotulo": "Ensino Fundamental EJA -series finais (Supletivo 5Âª a 8Âª)"
+      },
+      {
+        "codigo": "12",
+        "rotulo": "Ensino Medio EJA(Supletivo)"
+      },
+      {
+        "codigo": "13",
+        "rotulo": "Superior, Aperfeicoamento,Especializacao, Mestrado,Doutorado"
+      },
+      {
+        "codigo": "14",
+        "rotulo": "Alfabetizacao para Adultos(Mobral, etc.)"
+      },
+      {
+        "codigo": "15",
+        "rotulo": "Nenhum"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_deficiencia_memb",
+    "label": "Pessoa tem deficiencia?",
+    "descricao": "Pessoa tem deficiencia?",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Com deficiência"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Sem deficiência"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/deficiencia.json",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_escola_local_memb",
+    "label": "Escola localizada no municipio",
+    "descricao": "Escola localizada no municipio",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_est_cadastral_memb",
+    "label": "Estado cadastral da pessoa",
+    "descricao": "Estado cadastral da pessoa",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      2,
+      6
+    ],
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "2",
+        "rotulo": "Sem Registro Civil"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Cadastrado"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Aguardando NIS"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Validando NIS"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_familiar_fam_origem",
+    "label": "Codigo familiar (original)",
+    "descricao": "Codigo da familia de origem antes da transfencia",
+    "nivel": "pessoa",
+    "categoria": "id_pessoa",
+    "dtype": "Int64",
+    "faixa": null,
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_folha_termo_certid_pessoa",
+    "label": "Numero da folha",
+    "descricao": "Numero da folha",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_ibge_munic_certid_pessoa",
+    "label": "Codigo IBGE do municipio do registro",
+    "descricao": "Codigo IBGE do municipio do registro",
+    "nivel": "pessoa",
+    "categoria": "ibge",
+    "dtype": "Int32",
+    "faixa": [
+      0,
+      99999999
+    ],
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_ibge_munic_escola_memb",
+    "label": "Codigo do ibge do municipio da escola da pessoa",
+    "descricao": "Codigo do ibge do municipio da escola da pessoa",
+    "nivel": "pessoa",
+    "categoria": "ibge",
+    "dtype": "Int32",
+    "faixa": [
+      0,
+      99999999
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_ibge_munic_nasc_pessoa",
+    "label": "Codigo ibge do municipio de nascimento da pessoa",
+    "descricao": "Codigo ibge do municipio de nascimento da pessoa",
+    "nivel": "pessoa",
+    "categoria": "ibge",
+    "dtype": "Int32",
+    "faixa": [
+      0,
+      99999999
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_livro_termo_certid_pessoa",
+    "label": "Numero do livro",
+    "descricao": "Numero do livro",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_local_nascimento_pessoa",
+    "label": "Local de nascimento",
+    "descricao": "Local de nascimento",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      3
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Neste municipio"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Em outro municipio"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Em outro pais"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_pais_origem_pessoa",
+    "label": "Codigo do pais de nascimento da pessoa, no formato nn",
+    "descricao": "Codigo do pais de nascimento da pessoa, no formato nn",
+    "nivel": "pessoa",
+    "categoria": "codigo_longo",
+    "dtype": "Int16",
+    "faixa": [
+      0,
+      999
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_parentesco_rf_pessoa",
+    "label": "Relacao de parentesco com o responsavel familiar",
+    "descricao": "Relacao de parentesco com o responsavel familiar",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      11
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "RF"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Filho(a)"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Enteado(a)"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/parentesco_rf.json",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_principal_trab_memb",
+    "label": "Funcao principal",
+    "descricao": "Funcao principal",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      11
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Trabalhador por conta própria (bico, autônomo)"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Trabalhador temporário em área rural"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Empregado sem carteira de trabalho assinada"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Empregado com carteira de trabalho assinada"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Trabalhador doméstico sem carteira de trabalho assinada"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Trabalhador doméstico com carteira de trabalho assinada"
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Trabalhador não-remunerado"
+      },
+      {
+        "codigo": "8",
+        "rotulo": "Militar ou servidor público"
+      },
+      {
+        "codigo": "9",
+        "rotulo": "Empregador"
+      },
+      {
+        "codigo": "10",
+        "rotulo": "Estagiário"
+      },
+      {
+        "codigo": "11",
+        "rotulo": "Aprendiz"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/ocupacao_principal.json",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_raca_cor_pessoa",
+    "label": "Cor ou raca",
+    "descricao": "Cor ou raca",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      5
+    ],
+    "bloco": "raca_povos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Branca"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Preta"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Amarela"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Parda"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Indigena"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/raca_cor.json",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_sabe_ler_escrever_memb",
+    "label": "Pessoa sabe ler e escrever",
+    "descricao": "Pessoa sabe ler e escrever",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sabe ler e escrever"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Não sabe ler e escrever"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/alfabetizacao.json",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_sexo_pessoa",
+    "label": "Sexo",
+    "descricao": "Sexo",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Masculino"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Feminino"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/sexo.json",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_tempo_cidade_memb",
+    "label": "Tempo em que mora na cidade",
+    "descricao": "Tempo em que mora na cidade",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      6
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Ate seis meses"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Entre seis meses e um ano"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Entre um e dois anos"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Entre dois e cinco anos"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Entre cinco e dez anos"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Mais de dez anos"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_tempo_rua_memb",
+    "label": "Tempo em que vive na rua",
+    "descricao": "Tempo em que vive na rua",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      6
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Até seis meses"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Entre seis meses e um ano"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Entre um e dois anos"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Entre dois e cinco anos"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Entre cinco e dez anos"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Mais de dez anos"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/tempo_rua.json",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_termo_matricula_certid_pessoa",
+    "label": "Numero do termo",
+    "descricao": "Numero do termo",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.cod_trabalho_12_meses_memb",
+    "label": "Trabalho remunerado nos ultimos 12 meses",
+    "descricao": "Trabalho remunerado nos ultimos 12 meses",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_trabalhou_memb",
+    "label": "Pessoa trabalhou na semana passada?",
+    "descricao": "Pessoa trabalhou na semana passada?",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.cod_vive_fam_rua_memb",
+    "label": "Vive com sua familia na rua",
+    "descricao": "Vive com sua familia na rua",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.dta_emissao_cart_trab_pessoa",
+    "label": "Data de emissao da CTPS (formato DDMMAAAA)",
+    "descricao": "Data de emissao da CTPS (formato DDMMAAAA)",
+    "nivel": "pessoa",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.dta_emissao_ident_pessoa",
+    "label": "Data de emissao do RG (formato DDMMAAAA)",
+    "descricao": "Data de emissao do RG (formato DDMMAAAA)",
+    "nivel": "pessoa",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.dta_nasc_pessoa",
+    "label": "Data de nascimento",
+    "descricao": "Data de nascimento",
+    "nivel": "pessoa",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.fx_idade",
+    "label": "Faixa etaria",
+    "descricao": "Faixa etaria",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      12
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Entre 0 e 4"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Entre 5 a 6"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Entre 7 a 15"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Entre 16 a 17"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Entre 18 a 24"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Entre 25 a 34"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Entre 35 a 39"
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Entre 40 a 44"
+      },
+      {
+        "codigo": "8",
+        "rotulo": "Entre 45 a 49"
+      },
+      {
+        "codigo": "9",
+        "rotulo": "Entre 50 a 54"
+      },
+      {
+        "codigo": "10",
+        "rotulo": "Entre 55 a 59"
+      },
+      {
+        "codigo": "11",
+        "rotulo": "Entre 60 a 64"
+      },
+      {
+        "codigo": "12",
+        "rotulo": "Maior que  65"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.fx_renda_individual_805",
+    "label": "Faixa do valor de remuneracao do mes passado do trabalho principal.",
+    "descricao": "Faixa do valor de remuneracao do mes passado do trabalho principal.",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Pessoa com renda zero no quesito."
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito."
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito."
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito."
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito."
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito."
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito."
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Pessoa com renda maior do que três salários mínimos no quesito."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "Faixa de renda individual de acordo com todos os trabalhos realizados no mês anterior à data da entrevista.\n0 - Pessoa com renda zero no quesito.\n1 - Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito.\n2 - Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito.\n3 - Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito.\n4 - Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito.\n5 - Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito.\n6 - Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito.\n7 - Pessoa com renda maior do que três salários mínimos no quesito."
+  },
+  {
+    "name": "p.fx_renda_individual_808",
+    "label": "Faixa da remuneracao bruta de todos os trabalhos nos ultimos 12 meses.",
+    "descricao": "Faixa da remuneracao bruta de todos os trabalhos nos ultimos 12 meses.",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Pessoa com renda zero no quesito."
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses."
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses."
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses."
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses."
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses."
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses."
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Pessoa com renda maior do que três salários mínimos, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "Faixa de renda da remuneração bruta. É a soma das remunerações que a pessoa efetivamente recebeu em todos os trabalhos que teve durante os 12 meses anteriores à entrevista.\n0 - Pessoa com renda zero no quesito.\n1 - Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses.\n2 - Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses.\n3 - Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses.\n4 - Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses.\n5 - Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses.\n6 - Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses.\n7 - Pessoa com renda maior do que três salários mínimos, a partir do cálculo do valor do quesito 8.08 dividido por 12 meses."
+  },
+  {
+    "name": "p.fx_renda_individual_809_1",
+    "label": "Faixa do valor recebido de doacao.",
+    "descricao": "Faixa do valor recebido de doacao.",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Pessoa com renda zero no quesito."
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito."
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito."
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito."
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito."
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito."
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito."
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Pessoa com renda maior do que três salários mínimos no quesito."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "Faixa de renda recebida de doação/ajuda regular de não morador.\n0 - Pessoa com renda zero no quesito.\n1 - Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito.\n2 - Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito.\n3 - Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito.\n4 - Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito.\n5 - Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito.\n6 - Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito.\n7 - Pessoa com renda maior do que três salários mínimos no quesito."
+  },
+  {
+    "name": "p.fx_renda_individual_809_2",
+    "label": "Faixa do valor recebido de aposentadoria.",
+    "descricao": "Faixa do valor recebido de aposentadoria.",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Pessoa com renda zero no quesito."
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito."
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito."
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito."
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito."
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito."
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito."
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Pessoa com renda maior do que três salários mínimos no quesito."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "Faixa de renda recebida de aposentadoria, aposentadoria rural, pensão, BPC. Este\ncampo pode ser preenchido por pessoa menor de 14 anos de idade.\n0 - Pessoa com renda zero no quesito.\n1 - Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito.\n2 - Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito.\n3 - Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito.\n4 - Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito.\n5 - Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito.\n6 - Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito.\n7 - Pessoa com renda maior do que três salários mínimos no quesito."
+  },
+  {
+    "name": "p.fx_renda_individual_809_3",
+    "label": "Faixa do valor recebido de seguro desemprego.",
+    "descricao": "Faixa do valor recebido de seguro desemprego.",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Pessoa com renda zero no quesito."
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito."
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito."
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito."
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito."
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito."
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito."
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Pessoa com renda maior do que três salários mínimos no quesito."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "Faixa de renda recebida de seguro desemprego ou do seguro defeso. Renda temporária, o entrevistador soma os valores de todas as parcelas recebidas ou a receber, divide por 12 e registra o resultado desta operação neste quesito.\n0 - Pessoa com renda zero no quesito.\n1 - Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito.\n2 - Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito.\n3 - Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito.\n4 - Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito.\n5 - Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito.\n6 - Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito.\n7 - Pessoa com renda maior do que três salários mínimos no quesito."
+  },
+  {
+    "name": "p.fx_renda_individual_809_4",
+    "label": "Faixa do valor recebido de pensao alimenticia.",
+    "descricao": "Faixa do valor recebido de pensao alimenticia.",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Pessoa com renda zero no quesito."
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito."
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito."
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito."
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito."
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito."
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito."
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Pessoa com renda maior do que três salários mínimos no quesito."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "Faixa de renda recebida de pensão alimentícia. Este campo pode ser preenchido por\npessoa menor de 14 anos de idade.\n0 - Pessoa com renda zero no quesito.\n1 - Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito.\n2 - Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito.\n3 - Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito.\n4 - Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito.\n5 - Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito.\n6 - Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito.\n7 - Pessoa com renda maior do que três salários mínimos no quesito."
+  },
+  {
+    "name": "p.fx_renda_individual_809_5",
+    "label": "Faixa do valor recebido de outras fontes.",
+    "descricao": "Faixa do valor recebido de outras fontes.",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": null,
+    "bloco": "renda",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Pessoa com renda zero no quesito."
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito."
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito."
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito."
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito."
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito."
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito."
+      },
+      {
+        "codigo": "7",
+        "rotulo": "Pessoa com renda maior do que três salários mínimos no quesito."
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "Faixa de renda recebida de outras fontes. Não inclui benefícios do Bolsa Família, outros programas de transferência de renda, PETI, Pró-Jovem ou Auxílio Emergencial Financeiro.\n0 - Pessoa com renda zero no quesito.\n1 - Pessoa com renda maior do que zero e menor ou igual ao corte de extrema pobreza no quesito.\n2 - Pessoa com renda maior do que o corte de extrema pobreza e menor ou igual ao corte de pobreza no quesito.\n3 - Pessoa com renda maior do que o corte de pobreza e menor ou igual a meio salário mínimo no quesito.\n4 - Pessoa com renda maior do que meio salário mínimo e menor ou igual a um salário mínimo no quesito.\n5 - Pessoa com renda maior do que um salário mínimo e menor ou igual a dois salários mínimos no quesito.\n6 - Pessoa com renda maior do que dois salários mínimos e menor ou igual a três salários mínimos no quesito.\n7 - Pessoa com renda maior do que três salários mínimos no quesito."
+  },
+  {
+    "name": "p.grau_instrucao",
+    "label": "Grau de instrucao",
+    "descricao": "Grau de instrucao",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      7
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sem instrução"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Fundamental incompleto"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Fundamental completo"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Médio incompleto"
+      },
+      {
+        "codigo": "5",
+        "rotulo": "Médio completo"
+      },
+      {
+        "codigo": "6",
+        "rotulo": "Superior incompleto ou mais"
+      }
+    ],
+    "fonteValores": "catalogs/dictionaries/grau_instrucao.json",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ajuda_especializado_memb",
+    "label": "Recebe ajuda de cuidador especializado",
+    "descricao": "Recebe ajuda de cuidador especializado",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ajuda_familia_memb",
+    "label": "Recebe ajuda de alguem da familia",
+    "descricao": "Recebe ajuda de alguem da familia",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ajuda_instituicao_memb",
+    "label": "Recebe ajuda de instituicao",
+    "descricao": "Recebe ajuda de instituicao",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ajuda_nao_memb",
+    "label": "Nao recebe ajuda de terceiros",
+    "descricao": "Nao recebe ajuda de terceiros",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ajuda_outra_memb",
+    "label": "Recebe ajuda de outra forma",
+    "descricao": "Recebe ajuda de outra forma",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ajuda_vizinho_memb",
+    "label": "Recebe ajuda de vizinho",
+    "descricao": "Recebe ajuda de vizinho",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_atend_centro_ref_rua_memb",
+    "label": "Atendido por centro ref pop rua",
+    "descricao": "Atendido por centro ref pop rua",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_atend_cras_memb",
+    "label": "Atendido por cras",
+    "descricao": "Atendido por cras",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_atend_creas_memb",
+    "label": "Atendido por creas",
+    "descricao": "Atendido por creas",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_atend_hospital_geral_memb",
+    "label": "Atendido por hospital/clinica geral",
+    "descricao": "Atendido por hospital/clinica geral",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_atend_inst_gov_memb",
+    "label": "Atendido por instituicao governamental",
+    "descricao": "Atendido por instituicao governamental",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_atend_inst_nao_gov_memb",
+    "label": "Atendido por instituicao nao-governamental",
+    "descricao": "Atendido por instituicao nao-governamental",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_atend_nenhum_memb",
+    "label": "Nao foi atendido por nenhum local",
+    "descricao": "Nao foi atendido por nenhum local",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ativ_com_coop_memb",
+    "label": "Atividade comunitaria em cooperativa",
+    "descricao": "Atividade comunitaria em cooperativa",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ativ_com_escola_memb",
+    "label": "Atividade comunitaria em escola",
+    "descricao": "Atividade comunitaria em escola",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ativ_com_mov_soc_memb",
+    "label": "Atividade comunitaria em movimento social",
+    "descricao": "Atividade comunitaria em movimento social",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ativ_com_nao_resp_memb",
+    "label": "Nao respondeu se frequentou atividade comunitaria",
+    "descricao": "Nao respondeu se frequentou atividade comunitaria",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_ativ_com_nao_sabe_memb",
+    "label": "Nao sabe se frequentou atividade comunitaria",
+    "descricao": "Nao sabe se frequentou atividade comunitaria",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_def_baixa_visao_memb",
+    "label": "Baixa visao",
+    "descricao": "Baixa visao",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_def_cegueira_memb",
+    "label": "Cegueira",
+    "descricao": "Cegueira",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_def_fisica_memb",
+    "label": "Deficiencia fisica",
+    "descricao": "Deficiencia fisica",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_def_mental_memb",
+    "label": "Deficiencia mental ou intelectual",
+    "descricao": "Deficiencia mental ou intelectual",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_def_sindrome_down_memb",
+    "label": "Sindrome de Down",
+    "descricao": "Sindrome de Down",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_def_surdez_leve_memb",
+    "label": "Surdez leve/moderada",
+    "descricao": "Surdez leve/moderada",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_def_surdez_profunda_memb",
+    "label": "Surdez severa/profunda",
+    "descricao": "Surdez severa/profunda",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_def_transtorno_mental_memb",
+    "label": "Transtorno/doenca mental",
+    "descricao": "Transtorno/doenca mental",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "deficiencia",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Opcao nao marcada no formulario"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Opcao marcada no formulario"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_carregador_memb",
+    "label": "Ganha dinheiro como carregador",
+    "descricao": "Ganha dinheiro como carregador",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_catador_memb",
+    "label": "Ganha dinheiro como catador",
+    "descricao": "Ganha dinheiro como catador",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_const_memb",
+    "label": "Ganha dinheiro com construcao civil",
+    "descricao": "Ganha dinheiro com construcao civil",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_flanelhinha_memb",
+    "label": "Ganha dinheiro como guardador de carro",
+    "descricao": "Ganha dinheiro como guardador de carro",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_nao_resp_memb",
+    "label": "Nao respondeu como ganha dinheiro",
+    "descricao": "Nao respondeu como ganha dinheiro",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_outro_memb",
+    "label": "Ganha dinheiro de outra forma",
+    "descricao": "Ganha dinheiro de outra forma",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_pede_memb",
+    "label": "Ganha dinheiro como pedinte",
+    "descricao": "Ganha dinheiro como pedinte",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_servs_gerais_memb",
+    "label": "Ganha dinheiro com servicos gerais",
+    "descricao": "Ganha dinheiro com servicos gerais",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dinh_vendas_memb",
+    "label": "Ganha dinheiro com vendas",
+    "descricao": "Ganha dinheiro com vendas",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dormir_albergue_memb",
+    "label": "Dorme em albergue",
+    "descricao": "Dorme em albergue",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dormir_dom_part_memb",
+    "label": "Dorme em domicilio particular",
+    "descricao": "Dorme em domicilio particular",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_dormir_rua_memb",
+    "label": "Dorme na rua",
+    "descricao": "Dorme na rua",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_frequenta_escola_memb",
+    "label": "Pessoa frequenta escola",
+    "descricao": "Pessoa frequenta escola",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      4
+    ],
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim, rede publica"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Sim, rede particular"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Nao, ja frequentou"
+      },
+      {
+        "codigo": "4",
+        "rotulo": "Nunca frequentou"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_identidade_genero",
+    "label": "Indicador de identidade de genero",
+    "descricao": "Pessoa deseja informar o gênero?",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_alcool_memb",
+    "label": "Motivo da condicao de rua por alcoolismo",
+    "descricao": "Motivo da condicao de rua por alcoolismo",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_ameaca_memb",
+    "label": "Motivo da condicao de rua por ameaca",
+    "descricao": "Motivo da condicao de rua por ameaca",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_desemprego_memb",
+    "label": "Motivo da condicao de rua por desemprego",
+    "descricao": "Motivo da condicao de rua por desemprego",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_nao_resp_memb",
+    "label": "Nao respondeu o motivo da condicao de rua",
+    "descricao": "Nao respondeu o motivo da condicao de rua",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_nao_sabe_memb",
+    "label": "Nao sabe/nao lembra o motivo da condicao de rua",
+    "descricao": "Nao sabe/nao lembra o motivo da condicao de rua",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_outro_memb",
+    "label": "Motivo da condicao de rua por outro motivo",
+    "descricao": "Motivo da condicao de rua por outro motivo",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_perda_memb",
+    "label": "Motivo da condicao de rua por perda de moradia",
+    "descricao": "Motivo da condicao de rua por perda de moradia",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_pref_memb",
+    "label": "Motivo da condicao de rua por preferencia",
+    "descricao": "Motivo da condicao de rua por preferencia",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_probs_fam_memb",
+    "label": "Motivo da condicao de rua por problemas familiares",
+    "descricao": "Motivo da condicao de rua por problemas familiares",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_saude_memb",
+    "label": "Motivo da condicao de rua por tratamento de saude",
+    "descricao": "Motivo da condicao de rua por tratamento de saude",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_motivo_trabalho_memb",
+    "label": "Motivo da condicao de rua por trabalho",
+    "descricao": "Motivo da condicao de rua por trabalho",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_outro_memb",
+    "label": "Dorme de outra forma",
+    "descricao": "Dorme de outra forma",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_tipo_identidade_genero",
+    "label": "Tipo de identidade de genero",
+    "descricao": "Gênero/identidade de gênero da pessoa",
+    "nivel": "pessoa",
+    "categoria": "codigo_curto",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      9
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Feminina"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Masculina"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Não binário/a"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "1 - Feminina\n2 - Masculina\n3 - Não binário/a"
+  },
+  {
+    "name": "p.ind_trabalho_infantil_pessoa",
+    "label": "Pessoa com marcacao de trabalho infantil",
+    "descricao": "Pessoa com marcacao de trabalho infantil",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      1,
+      2
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Nao"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.ind_transgenero",
+    "label": "Indicador de pessoa transgenero",
+    "descricao": "É pessoa trans ou travesti?",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "1",
+        "rotulo": "Sim, a pessoa é trans"
+      },
+      {
+        "codigo": "2",
+        "rotulo": "Sim, a pessoa é travesti"
+      },
+      {
+        "codigo": "3",
+        "rotulo": "Não"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": "1 - Sim, a pessoa é trans\n2 - Sim, a pessoa é travesti\n3 – Não"
+  },
+  {
+    "name": "p.marc_pbf",
+    "label": "Pessoa beneficiaria do Programa Bolsa Familia",
+    "descricao": "Pessoa beneficiaria do Programa Bolsa Familia",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.marc_sit_rua",
+    "label": "Situacao de Rua",
+    "descricao": "Situacao de Rua",
+    "nivel": "pessoa",
+    "categoria": "booleano",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      1
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [
+      {
+        "codigo": "0",
+        "rotulo": "Nao"
+      },
+      {
+        "codigo": "1",
+        "rotulo": "Sim"
+      }
+    ],
+    "fonteValores": "dicionariocecad_marc_pbf_atual.xlsx",
+    "observacao": null
+  },
+  {
+    "name": "p.nom_apelido_pessoa",
+    "label": "Nome Social/Apelido",
+    "descricao": "Nome Social/Apelido",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.nom_completo_mae_pessoa",
+    "label": "Nome da mae",
+    "descricao": "Nome da mae",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.nom_completo_pai_pessoa",
+    "label": "Nome do pai",
+    "descricao": "Nome do pai",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.nom_escola_memb",
+    "label": "Nome da escola da pessoa",
+    "descricao": "Nome da escola da pessoa",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.nom_ibge_munic_nasc_pessoa",
+    "label": "Nome do municipio de nascimento da pessoa",
+    "descricao": "Nome do municipio de nascimento da pessoa",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.nom_munic_certid_pessoa",
+    "label": "Municipio do registro",
+    "descricao": "Municipio do registro",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.nom_munic_escola_memb",
+    "label": "Nome do municipio da escola da pessoa",
+    "descricao": "Nome do municipio da escola da pessoa",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.nom_pais_origem_pessoa",
+    "label": "Nome do pais de nascimento da pessoa",
+    "descricao": "Nome do pais de nascimento da pessoa",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.nom_pessoa",
+    "label": "Nome",
+    "descricao": "Nome",
+    "nivel": "pessoa",
+    "categoria": "texto_longo",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.num_cart_trab_prev_soc_pessoa",
+    "label": "Numero da CTPS",
+    "descricao": "Numero da CTPS",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.num_cpf_pessoa",
+    "label": "CPF da pessoa",
+    "descricao": "CPF da pessoa",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.num_identidade_pessoa",
+    "label": "Numero do RG",
+    "descricao": "Numero do RG",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.num_nis_pessoa_atual",
+    "label": "Num Nis Pessoa Atual",
+    "descricao": "NIS",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.num_secao_tit_eleitor_pessoa",
+    "label": "Secao do Titulo de Eleitor",
+    "descricao": "Secao do Titulo de Eleitor",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.num_serie_trab_prev_soc_pessoa",
+    "label": "Serie da CTPS",
+    "descricao": "Serie da CTPS",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.num_titulo_eleitor_pessoa",
+    "label": "Numero do Titulo de Eleitor",
+    "descricao": "Numero do Titulo de Eleitor",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.num_zona_tit_eleitor_pessoa",
+    "label": "Zona do Titulo de Eleitor",
+    "descricao": "Zona do Titulo de Eleitor",
+    "nivel": "pessoa",
+    "categoria": "identificador_pii",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": true,
+    "distribuivel": false,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.qtd_dormir_freq_albergue_memb",
+    "label": "Quantidade de vezes por semana que dorme em albergue",
+    "descricao": "Quantidade de vezes por semana que dorme em albergue",
+    "nivel": "pessoa",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      31
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.qtd_dormir_freq_dom_part_memb",
+    "label": "Quantidade de vezes por semana que dorme em domicilio particular",
+    "descricao": "Quantidade de vezes por semana que dorme em domicilio particular",
+    "nivel": "pessoa",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      31
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.qtd_dormir_freq_rua_memb",
+    "label": "Quantidade de vezes por semana que dorme na rua",
+    "descricao": "Quantidade de vezes por semana que dorme na rua",
+    "nivel": "pessoa",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      31
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.qtd_freq_outro_memb",
+    "label": "Quantidade de vezes por semana que dorme de outra forma",
+    "descricao": "Quantidade de vezes por semana que dorme de outra forma",
+    "nivel": "pessoa",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      31
+    ],
+    "bloco": "situacao_rua",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.qtd_meses_12_meses_memb",
+    "label": "Quantidade de meses trabalhados nos ultimos 12 meses",
+    "descricao": "Quantidade de meses trabalhados nos ultimos 12 meses",
+    "nivel": "pessoa",
+    "categoria": "contador",
+    "dtype": "Int8",
+    "faixa": [
+      0,
+      12
+    ],
+    "bloco": "trabalho",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.ref_cad",
+    "label": "Referencia Cadastro Unico",
+    "descricao": "Referencia Cadastro Unico",
+    "nivel": "pessoa",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.ref_pbf",
+    "label": "Data de referencia Programa Bolsa Familia",
+    "descricao": "Data de referencia Programa Bolsa Familia",
+    "nivel": "pessoa",
+    "categoria": "data",
+    "dtype": "Date",
+    "faixa": null,
+    "bloco": "programas",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.sig_orgao_emissor_pessoa",
+    "label": "Sigla do orgao emissor do RG",
+    "descricao": "Sigla do orgao emissor do RG",
+    "nivel": "pessoa",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.sig_uf_cart_trab_pessoa",
+    "label": "Estado emissor da CTPS",
+    "descricao": "Estado emissor da CTPS",
+    "nivel": "pessoa",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.sig_uf_escola_memb",
+    "label": "UF da escola da pessoa",
+    "descricao": "UF da escola da pessoa",
+    "nivel": "pessoa",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "escolaridade",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.sig_uf_ident_pessoa",
+    "label": "Estado emissor do RG",
+    "descricao": "Estado emissor do RG",
+    "nivel": "pessoa",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "documentos",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  },
+  {
+    "name": "p.sig_uf_munic_nasc_pessoa",
+    "label": "UF de nascimento da pessoa",
+    "descricao": "UF de nascimento da pessoa",
+    "nivel": "pessoa",
+    "categoria": "texto_curto",
+    "dtype": "String",
+    "faixa": null,
+    "bloco": "identificacao",
+    "pii": false,
+    "distribuivel": true,
+    "noParquet": true,
+    "valores": [],
+    "fonteValores": null,
+    "observacao": null
+  }
+]

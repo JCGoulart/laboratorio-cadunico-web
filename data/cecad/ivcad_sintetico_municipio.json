@@ -1,0 +1,107 @@
+{
+  "fonte": "IVCAD (IN084, MDS/SAGICAD) — reimplementação pública do projeto irmão IVCAD",
+  "versaoMetodologia": "1.0.6",
+  "referencia": "https://wiki-sagi.mds.gov.br/home/DS/Cad/I/IN084",
+  "base": "cecad_sintetico_<ibge>.parquet (4 arquivos)",
+  "formula": "IVCAD = (NC + DPI + DCA + TQA + DR + CH) / 6 — média simples, pesos iguais",
+  "dominio": "[0, 1] — 0 = menor vulnerabilidade, 1 = maior vulnerabilidade",
+  "limiares": {
+    "alto": 0.5,
+    "muitoAlto": 0.75
+  },
+  "dimensoes": [
+    {
+      "id": "NC",
+      "label": "Necessidade de Cuidados",
+      "indicadores": 7
+    },
+    {
+      "id": "DPI",
+      "label": "Desenvolvimento na Primeira Infância",
+      "indicadores": 3
+    },
+    {
+      "id": "DCA",
+      "label": "Desenvolvimento de Crianças e Adolescentes",
+      "indicadores": 5
+    },
+    {
+      "id": "TQA",
+      "label": "Trabalho e Qualificação de Adultos",
+      "indicadores": 7
+    },
+    {
+      "id": "DR",
+      "label": "Disponibilidade de Recursos",
+      "indicadores": 4
+    },
+    {
+      "id": "CH",
+      "label": "Condições Habitacionais",
+      "indicadores": 14
+    }
+  ],
+  "familiasTotal": 244000,
+  "amplitude": 0.0086,
+  "universo": "Todas as famílias da base sintética. O filtro de universo do IVCAD oficial (beneficiárias do PBF; não beneficiárias com cadastro atualizado há até 2 anos e renda per capita até 1/2 SM) NÃO é aplicado.",
+  "folhas": "Sem folhas PBF/BPC: DR1 e DR3 entram; DR2 e DR4 ficam sem os valores externos.",
+  "aviso": "Dados SINTÉTICOS (4 municípios). Serve para discutir a metodologia do índice, não para estimar a realidade de nenhum território.",
+  "municipios": [
+    {
+      "ibge": 3140001,
+      "municipio": "Mariana",
+      "familias": 61000,
+      "ivcad": 0.422,
+      "nc": 0.3691,
+      "dpi": 0.1446,
+      "dca": 0.2044,
+      "tqa": 0.804,
+      "dr": 0.7271,
+      "ch": 0.283,
+      "pctAlto": 0.2556,
+      "pctMuitoAlto": 0.0023
+    },
+    {
+      "ibge": 3146107,
+      "municipio": "Ouro Preto",
+      "familias": 61000,
+      "ivcad": 0.4176,
+      "nc": 0.3714,
+      "dpi": 0.144,
+      "dca": 0.2061,
+      "tqa": 0.8038,
+      "dr": 0.7371,
+      "ch": 0.243,
+      "pctAlto": 0.2455,
+      "pctMuitoAlto": 0.0024
+    },
+    {
+      "ibge": 3303302,
+      "municipio": "Niterói",
+      "familias": 61000,
+      "ivcad": 0.4134,
+      "nc": 0.3678,
+      "dpi": 0.1416,
+      "dca": 0.205,
+      "tqa": 0.8037,
+      "dr": 0.7413,
+      "ch": 0.221,
+      "pctAlto": 0.2328,
+      "pctMuitoAlto": 0.002
+    },
+    {
+      "ibge": 3304557,
+      "municipio": "Rio de Janeiro",
+      "familias": 61000,
+      "ivcad": 0.4161,
+      "nc": 0.3715,
+      "dpi": 0.1441,
+      "dca": 0.2069,
+      "tqa": 0.8051,
+      "dr": 0.7478,
+      "ch": 0.2214,
+      "pctAlto": 0.2408,
+      "pctMuitoAlto": 0.0022
+    }
+  ]
+}
